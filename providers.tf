@@ -1,10 +1,10 @@
 
 terraform {
-  required_version = ">=1.1.5"
+  #required_version = ">=1.1.5"
 
   backend "s3" {
       bucket = "operational-kojitechs-s3statefile-tf-12"
-      dynamodb_table = "terraform-lock"
+      # dynamodb_table = "terraform-lock"
       key = "path/env"
       region = "us-east-1"
       encrypt = "true"
